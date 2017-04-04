@@ -1,0 +1,85 @@
+<HTML>
+  <head>
+    <title>Problem 3</title>
+  </head>
+  <body>
+
+    <div id="problem">
+      <h1>Poke Network</h1>
+      <p>
+        People connect with each other in a Poke network. <br />
+        A connection between Person <b>I</b> and Person <b>J</b> is represented as <b>M I J</b><br />
+        When two people belonging to different communities connect, the net effect is the merger of both communities which <b>I</b> and <b>J</b> belong to. <br />
+        <br />
+        At the beginning, there are <b>N</b> people representing <b>N</b> communities. Suppose person <b>1</b> and <b>2</b> are connected and later <b>2</b> and <b>3</b> connected, then <b>1,2 and 3</b> will belong to the same community. <br />
+        <br />
+        There are 2 tpes of queries:
+        1. <b>M I J</b> ==> Communities containing person <b>I</b> and <b>J</b> merged (if they belong to different communities)
+        2. <b>Q I</b> ==> Print the size of the community to which person <b>I</b>
+      </p>
+
+      <h2>Input</h2>
+      <p>
+        The first line of the input will contain integers <b>N</b> and <b>Q</b>, i.e the number of people and the number of queries.<br />
+        The next <b>Q</b> lines will contain the queries.
+      </p>
+
+      <h2>Output</h2>
+      <p>
+        The output of the queries.
+      </p>
+
+      <h2>Large Data set (100 points)</h2>
+      <p>
+          1 ≤ <b>N</b> ≤ 10<sup>5</sup><br />
+          1 ≤ <b>Q</b> ≤ 2 x 10<sup>5</sup> <br />
+      </p>
+
+      <h2>Sample Input</h2>
+      <p>
+        3 6 <br />
+        Q 1<br />
+        M 1 2 <br />
+        Q 2 <br />
+        M 2 3 <br />
+        Q 3 <br />
+        Q 2 <br />
+      </p>
+
+      <h2>Sample Output</h2>
+      <p>
+        1 <br />
+        2 <br />
+        3 <br />
+        3 <br />
+      </p>
+    </div>
+
+  <div class="input">
+    <h3>Large Input</h3>
+    <a href="/static/input/la_prob3.in" download>Input File</a>
+    <form action="/prog/play/3" method="POST" enctype=multipart/form-data>
+      <input type="file" name="large" required/>
+
+      <input type="submit" />
+    </form>
+  </div>
+
+  <div class="input">
+    <h3>Program</h3>
+    <form action="/prog/play/3" method="POST" enctype=multipart/form-data>
+      <input type="file" name="program" required />
+      <input type="submit" />
+    </form>
+  </div>
+
+  {% if message %}
+  <h1>{{message}}</h1>
+{%endif%}
+<br /><br />
+<button onclick="window.location.pathname='/leaderboard'">Leaderboard</button>
+<button onclick="window.location.pathname='/prog/play'">Home</button>
+<button onclick="window.location.pathname='/logout'">Logout</button>
+
+  </body>
+</HTML>

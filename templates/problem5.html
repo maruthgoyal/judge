@@ -1,0 +1,96 @@
+<HTML>
+  <head>
+    <title>Problem 5</title>
+  </head>
+  <body>
+
+    <div id="problem">
+      <h1>Ash and Short Stories.</h1>
+      <p>
+        Ash is obsessed with reading short stories. Being a Pokemon student, he is doing some interesting frequency analysis with books. <br />
+        He choses strings <b>S<sub>1</sub></b> and <b>S<sub>2</sub></b> in such a way that |len(S<sub>1</sub>) - len(S<sub>2</sub>)| ≤ <b>1</b> <br />
+
+        Your task is to help him find the minimum number of characters of the first string he needs to change to enable him to make it an anagram of the second string.<br />
+        Note: A word x is an anagram of another word y if we can produce y by rearranging the letters of x.
+      </p>
+
+      <h2>Input</h2>
+      <p>
+        The first line will contain an integer, <b>T</b>, representing the number of test cases.<br />
+        Each test case will contain a string having length <b>len(S<sub>1</sub>) + len(S<sub>2</sub>)</b>, which will be concatenation of both the strings described above in the problem.<br />
+        The given string will contain only characters from <b>a</b> to <b>z</b>.
+      </p>
+
+      <h2>Output</h2>
+      <p>
+        An integer corresponding to each test case is printed in a different line, i.e. the number of changes required for each test case. Print <b>-1</b> if it is not possible.
+      </p>
+
+      <h2>Small dataset (30 points) </h2>
+
+      <h2>Large dataset (70 points)</h2>
+      <p>
+        1 ≤ <b>T</b> ≤ 100<br />
+        1 ≤ <b>len(S<sub>1</sub>) + len(S<sub>2</sub>)</b> ≤ 10<sup>4</sup>
+      </p>
+
+      <h2>Sample Input</h2>
+      <p>
+        6 <br />
+        aaabbb <br />
+        ab <br />
+        abc <br />
+        mnop <br />
+        xyyx <br />
+        xaxbbbxx <br />
+      </p>
+
+      <h2>Sample Output</h2>
+      <p>
+        3<br />
+        1<br />
+        -1<br />
+        2<br />
+        0<br />
+        1<br />
+      </p>
+    </div>
+
+    <div class="input">
+      <h3>Small Input</h3>
+      <a href="/static/input/sm_prob5.in" download>Input File</a>
+      <form action="/prog/play/5" method="POST" enctype=multipart/form-data>
+        <input type="file" name="small" required/>
+
+        <input type="submit" />
+      </form>
+    </div>
+
+  <div class="input">
+    <h3>Large Input</h3>
+    <a href="/static/input/la_prob5.in" download>Input File</a>
+    <form action="/prog/play/5" method="POST" enctype=multipart/form-data>
+      <input type="file" name="large" required/>
+
+      <input type="submit" />
+    </form>
+  </div>
+
+  <div class="input">
+    <h3>Program</h3>
+    <form action="/prog/play/5" method="POST" enctype=multipart/form-data>
+      <input type="file" name="program" required />
+      <input type="submit" />
+    </form>
+  </div>
+
+  {% if message %}
+  <h1>{{message}}</h1>
+{%endif%}
+<br /><br />
+<button onclick="window.location.pathname='/leaderboard'">Leaderboard</button>
+<button onclick="window.location.pathname='/prog/play'">Home</button>
+<button onclick="window.location.pathname='/logout'">Logout</button>
+
+  </body>
+</HTML>

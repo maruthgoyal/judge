@@ -1,0 +1,50 @@
+input {
+	width: 30%;
+	display: inline-block;
+}
+.title {
+	margin: 5% 0;
+}
+body {
+	text-align: center;
+	font-family: "Roboto-Regular"
+}
+.team-image {
+	border:none;
+	display: inline-block;
+	width: 80%;
+	height: auto;
+}
+
+.team-desc {
+	display: inline-block;
+}
+.team-form {
+	max-width: 30%;
+	margin: 0;
+	display: inline-block;
+}
+table {
+
+	width: 90%;
+	margin-left: 5%;
+}
+.hint-img {
+	margin-top: 5em;
+	width: 30%;
+}
+.hint-txt {
+	margin-top: 9em;
+}
+#rules {
+	display: inline-block;
+	text-align: left;
+	max-width: 80%;
+	font-size: 1.2em;
+}
+#rules h1 {
+	margin: 2em auto;
+}
+#rules li {
+	font-family: 'Open Sans';
+}

@@ -1,0 +1,91 @@
+<HTML>
+  <head>
+    <title>Problem 4</title>
+  </head>
+  <body>
+
+    <div id="problem">
+      <h1>Be Rational.</h1>
+      <p>
+        A positive rational number is a real number which can be expressed as <b>P/Q</b> where <b>P, Q</b> are coprime positive intergers. <br />
+        The Chef is very hungry and can get food only if he solves the following question. <br />
+        "Given a number <b>N</b>, find the number of positive rational numbers less than <b>1</b> such that when expressed as <b>P/Q</b>, both <b>P, Q</b> are less than or equal to <b>N</b>". <br />
+        Please help the Chef in answering this question. The Chef promises to share the food with you. <br />
+
+      </p>
+
+      <h2>Input</h2>
+      <p>
+        The first line contain a single integer <b>T</b>, the number of test cases. <br />
+        Following <b>T</b> (<= 10<sup>3</sup>) lines will contain a test case, a single number <b>N</b> (<= 10<sup>6</sup>).
+      </p>
+
+      <h2>Output</h2>
+      <p>
+        For each test case print the output on a single line.
+      </p>
+
+      <h2>Small dataset (30 points) </h2>
+      <p>
+        1 ≤ <b>T</b> ≤ 200
+      </p>
+
+      <h2>Large dataset (70 points)</h2>
+      <p>
+        1 ≤ <b>T</b> ≤ 1000
+      </p>
+
+      <h2>Sample Input</h2>
+      <p>
+        3<br />
+        1<br />
+        2<br />
+        3<br />
+      </p>
+
+      <h2>Sample Output</h2>
+      <p>
+        0 <br />
+        1<br />
+        3<br />
+      </p>
+    </div>
+
+    <div class="input">
+      <h3>Small Input</h3>
+      <a href="/static/input/sm_prob4.in" download>Input File</a>
+      <form action="/prog/play/4" method="POST" enctype=multipart/form-data>
+        <input type="file" name="small" required/>
+
+        <input type="submit" />
+      </form>
+    </div>
+
+  <div class="input">
+    <h3>Large Input</h3>
+    <a href="/static/input/la_prob4.in" download>Input File</a>
+    <form action="/prog/play/4" method="POST" enctype=multipart/form-data>
+      <input type="file" name="large" required/>
+
+      <input type="submit" />
+    </form>
+  </div>
+
+  <div class="input">
+    <h3>Program</h3>
+    <form action="/prog/play/4" method="POST" enctype=multipart/form-data>
+      <input type="file" name="program" required />
+      <input type="submit" />
+    </form>
+  </div>
+
+  {% if message %}
+  <h1>{{message}}</h1>
+{%endif%}
+<br /><br />
+<button onclick="window.location.pathname='/leaderboard'">Leaderboard</button>
+<button onclick="window.location.pathname='/prog/play'">Home</button>
+<button onclick="window.location.pathname='/logout'">Logout</button>
+
+  </body>
+</HTML>

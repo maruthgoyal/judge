@@ -1,0 +1,107 @@
+<HTML>
+  <head>
+    <title>Problem 2</title>
+  </head>
+  <body>
+
+    <div id="problem">
+
+      <H1>Tiles</H1>
+
+      <p>
+        You are given a grid having <b>N</b> rows and <b>M</b> columns. <br />
+        A grid square can either be blocked or empty. <br />
+        Blocked squares are represented by a <b>'#'</b> and empty squares are represented by <b>'.'</b>. <br />
+        Find the number of ways to tile the grid using <b>L shaped</b> bricks. <br />
+        A L brick has <b>one side of length three units</b> while <b>other of length 2 units.</b> <br />
+        All empty squares in the grid should be covered by exactly one of the L shaped tiles, and blocked squares should not be covered by any tile. <br />
+        The bricks can be used in any orientation (they can be rotated or flipped). <br />
+      </p>
+
+      <H2>Input</H2>
+
+      <p>
+        The first line contains the number of test cases <b>T</b>.  <br />
+        <b>T</b> test cases follow. <br />
+        Each test case contains <b>N</b> and <b>M</b> on the first line, followed by <b>N</b> lines describing each row of the grid.
+      </p>
+
+      <H2>Output</H2>
+
+      <p>
+      Output the number of ways to tile the grid. Output each answer modulo <b>1000000007</b>. <br />
+      </p>
+
+      <H2>Small Dataset (40 points)</H2>
+
+      <H2>Large Dataset (60 points)</H2>
+      <p>
+        1 <= T <= 50
+        1 <= N <= 20
+        1 <= M <= 8
+        Each grid square will be either '.' or '#'.
+      </p>
+
+      <H2>Sample Input</H2>
+      <p>
+        3 <br />
+        2 4 <br />
+        .... <br />
+        .... <br />
+        3 3 <br />
+        ... <br />
+        .#. <br />
+        ... <br />
+        2 2 <br />
+        ## <br />
+        ## <br />
+      </p>
+
+      <H2>Sample Output</H2>
+      <p>
+        2 <br />
+        4 <br />
+        1<br />
+      </p>
+    </div>
+
+    <div class="input">
+    <h3>Small Input</h3>
+    <a href="/static/input/sm_prob2.in" download>Input File</a>
+    <form action="/prog/play/2" method="POST" enctype=multipart/form-data>
+      <input type="file" name="small" required/>
+
+      <input type="submit" />
+    </form>
+  </div>
+
+  <br />
+
+  <div class="input">
+    <h3>Large Input</h3>
+    <a href="/static/input/la_prob2.in" download>Input File</a>
+    <form action="/prog/play/2" method="POST" enctype=multipart/form-data>
+      <input type="file" name="large" required/>
+
+      <input type="submit" />
+    </form>
+  </div>
+
+  <div class="input">
+    <h3>Program</h3>
+    <form action="/prog/play/2" method="POST" enctype=multipart/form-data>
+      <input type="file" name="program" required />
+      <input type="submit" />
+    </form>
+  </div>
+
+  {% if message %}
+  <h1>{{message}}</h1>
+{%endif%}
+<br /><br />
+<button onclick="window.location.pathname='/leaderboard'">Leaderboard</button>
+<button onclick="window.location.pathname='/prog/play'">Home</button>
+<button onclick="window.location.pathname='/logout'">Logout</button>
+
+  </body>
+</HTML>

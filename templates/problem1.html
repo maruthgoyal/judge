@@ -1,0 +1,92 @@
+<HTML>
+  <head>
+    <title>Problem 1</title>
+  </head>
+  <body>
+
+    <div id="problem">
+      <H1>Ash's Sequence</H1>
+      <p>
+        Brock gives Ash an array <b>A</b><sub>1</sub>,A<sub>2</sub>...A<sub>N</sub>. <br />
+        He asks him to find an integer <b>M</b> between <b>P</b> and <b>Q</b>(both inclusive), such that, <b>min {|Ai-M|, 1 ≤ i ≤ N}</b> is maximised. <br />
+        If there are multiple solutions, print the smallest one. <br />
+
+      </p>
+
+      <h2>Input</h2>
+      <p>
+        The first line contains <b>N</b>. <br />
+        The next line contains space separated <b>N</b> integers, and denote the array <b>A</b>. <br />
+        The third line contains two space separated integers denoting <b>P</b> and <b>Q</b>. <br />
+      </p>
+
+      <h2>Output</h2>
+      <p>
+        For each test case output the respective answer in a separate line.
+      </p>
+
+      <h2>Small Dataset (30 points)</h2>
+
+      <h2>Large Dataset (70 points)</h2>
+      <p>
+        1 ≤ N ≤ 10<sup>2</sup>
+        1 ≤ Ai ≤ 10<sup>9</sup>
+        1 ≤ P ≤ Q ≤ 10<sup>9</sup>
+      </p>
+
+      <h2>Sample Input</h2>
+      <p><b>
+        3<br />
+        5 8 14<br />
+        4 9<br />
+      </b>
+      </p>
+
+      <h2>Sample Output</h2>
+      <p><b>
+        4<br />
+      </b>
+      </p>
+      <br />
+    </div>
+
+    <div class="input">
+    <h3>Small Input</h3>
+    <a href="/static/input/sm_prob1.in" download>Input File</a>
+    <form action="/prog/play/1" method="POST" enctype=multipart/form-data>
+      <input type="file" name="small" required/>
+
+      <input type="submit" />
+    </form>
+  </div>
+
+  <br />
+
+  <div class="input">
+    <h3>Large Input</h3>
+    <a href="/static/input/la_prob1.in" download>Input File</a>
+    <form action="/prog/play/1" method="POST" enctype=multipart/form-data>
+      <input type="file" name="large" required/>
+
+      <input type="submit" />
+    </form>
+  </div>
+
+  <div class="input">
+    <h3>Program</h3>
+    <form action="/prog/play/1" method="POST" enctype=multipart/form-data>
+      <input type="file" name="program" required />
+      <input type="submit" />
+    </form>
+  </div>
+
+  {% if message %}
+  <h1>{{message}}</h1>
+{%endif%}
+<br /><br />
+<button onclick="window.location.pathname='/leaderboard'">Leaderboard</button>
+<button onclick="window.location.pathname='/prog/play'">Home</button>
+<button onclick="window.location.pathname='/logout'">Logout</button>
+
+  </body>
+</HTML>
